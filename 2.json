@@ -1,0 +1,8 @@
+//point a
+db.books.find({},{name:1, _id:0})
+//point b
+db.books.find({}).sort({name:1})
+//point c
+db.books.find({}).limit(3)
+//point d
+db.books.find({}).count()

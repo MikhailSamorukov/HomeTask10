@@ -1,0 +1,1 @@
+db.books.update({$and: [{genre: {$in:["fantasy"]}},{genre: {$nin:["favority"]}}]},{$push:{genre:"favority"}}, {multi:true})

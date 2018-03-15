@@ -1,0 +1,2 @@
+db.books.find({},{name:1, _id:0}).sort({count:-1}).limit(1) //Max
+db.books.find({},{name:1, _id:0}).sort({count:+1}).limit(2) //Min
